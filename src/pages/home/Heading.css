@@ -1,0 +1,22 @@
+.Heading-Container {
+  display: flex;
+  flex-direction: column;
+  margin: 45px;
+}
+
+.Heading-Container h1 {
+  color: #152e6d;
+  font-size: 3.5rem;
+  font-weight: 630;
+}
+.Heading-Container h3 {
+  color: #152e6c;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.Heading-Container h4 {
+  color: #6eabd2;
+  font-weight: 300;
+  font-size: 1.1rem;
+}

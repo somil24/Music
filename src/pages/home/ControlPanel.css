@@ -1,0 +1,32 @@
+.Control-Container {
+  border-right: 3px solid #e2eaee;
+  border-left: 3px solid #aed2e6;
+  border-radius: 50px;
+  justify-content: center;
+
+  /*margin-left: 50px;
+  margin-top: 20px;*/
+  box-shadow: -6px -5px 25px rgb(238, 238, 238), 12px 7px 15px #8abddc;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+.icon > .MuiIconButton-root {
+  margin: 1.2rem 0 1.2rem 0;
+  color: #7db2d3;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .icon {
+    flex-direction: row;
+    padding: 0.5em;
+    justify-content: center;
+  }
+
+  .icon > .MuiIconButton-root {
+    margin: 1.2rem 2rem 1.2rem 0;
+    font-size: 50px !important;
+  }
+}

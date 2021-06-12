@@ -1,0 +1,83 @@
+.Display-Container {
+  background-color: #add4e9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20em;
+  height: 40em;
+  border-bottom-left-radius: 20em;
+  border-top-left-radius: 20em;
+  margin-right: 0;
+  box-shadow: 10px 12px 60px 30px white;
+}
+
+.Display-Timer {
+  border-left: 3px solid #df3f0ff8;
+  border-top: 3px solid #df3f0ff8;
+  border-bottom: 3px solid #df3f0ff8;
+  display: flex;
+  align-items: center;
+  width: 17em;
+  height: 34em;
+  border-bottom-left-radius: 20em;
+  border-top-left-radius: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Display-Image {
+  width: 15em;
+  height: 29em;
+  border-bottom-left-radius: 20em;
+  border-top-left-radius: 20em;
+  box-shadow: -5px -2px 18px 2px white, 10px 12px 10px 10px #498ebf;
+}
+.Display-Image > img {
+  width: 15em;
+  height: 29em;
+  border-bottom-left-radius: 20em;
+  border-top-left-radius: 20em;
+}
+
+/*
+
+.Display-Timer {
+  width: 36em;
+  height: 36em;
+  border: 3.5px solid #C1171C;
+  border-radius: 100%;
+  margin: 2em;
+}
+
+@media only screen and (min-device-width: 765px) {
+  .Display-Container {
+    width: 40em;
+    height: 40em;
+    border-radius: 100%;
+  }
+}
+@media only screen and (min-device-width: 765px) and (max-device-width: 1024px) {
+  .Display-Container {
+    width: 40em;
+    height: 40em;
+    border-radius: 100%;
+    margin-left: 170px;
+  }
+}
+
+@media only screen and (device-width: 411px) and (device-height: 731px) {
+  .Display-Container {
+    margin-left: 80px;
+    border-bottom-left-radius: 35em;
+    border-top-left-radius: 35em;
+  }
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+  .Display-Container {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+*/
