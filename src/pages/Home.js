@@ -3,6 +3,8 @@ import ControlPanel from "./home/ControlPanel"
 import "./Home.css"
 import Display from "./home/Display"
 import React,{useState,useEffect} from 'react'
+import { Link, NavLink, Route } from "react-router-dom"
+
 export default function Home(){
     //We will fetch data here
 
@@ -44,9 +46,10 @@ export default function Home(){
         <div className="Home-Display">
         <Display img_src={songs[currentSongIndex].img_src}/>
         </div>
-        
         </div>
-                   
+        <div className="Home-playlist">
+          <NavLink to="/play" className="Play">PlayList</NavLink>
+        </div>                  
 
         </div>
     );

@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}

@@ -17,6 +17,23 @@
 .Home-Display {
 }
 
+.Play {
+  margin-top: 2em;
+  color: #152e6d;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px 7px 5px 7px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 2em;
+  border-bottom: 1px solid white;
+  box-shadow: inset 1px 7px 7px #7fb0d2, inset -2px 8px 10px white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 @media only screen and (min-device-width: 768px) {
   .Home-Container2 {
     flex-direction: column-reverse;

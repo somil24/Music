@@ -8,13 +8,15 @@
   border-bottom-left-radius: 20em;
   border-top-left-radius: 20em;
   margin-right: 0;
-  box-shadow: 10px 12px 60px 30px white;
+  box-shadow: 10px 12px 60px 30px white, 13px 20px 20px 13px #0185cc;
+  border-bottom: 5px solid white;
+  border-top: 5px solid #c0dff0;
 }
 
 .Display-Timer {
-  border-left: 3px solid #df3f0ff8;
-  border-top: 3px solid #df3f0ff8;
-  border-bottom: 3px solid #df3f0ff8;
+  border-left: 3px solid #1e346d;
+  border-top: 3px solid #1e346d;
+  border-bottom: 3px solid #1e346d;
   display: flex;
   align-items: center;
   width: 17em;

@@ -29,17 +29,18 @@ export default function ControlPanel(props){
                 })
                 
             }         
-        }
+        }  
+        
     
 return(
     <div className="Control-Container">
     <audio ref={audio} src={props.src}/>
     <div className="icon">
-    <IconButton><Replay onClick={()=>audio.current.currentTime=0}/></IconButton>
-    <IconButton ><SkipNext onClick={()=>SkipSong()}/></IconButton>
-    <IconButton onClick={()=>setIsPlaying(!isPlaying)}>{isPlaying?<Pause/>:<PlayArrow/>}</IconButton>
-    <IconButton ><SkipPrevious onClick={()=>SkipSong(false)}/></IconButton>
-    <IconButton ><FavoriteBorderOutlined /></IconButton>
+    <IconButton><Replay onClick={()=>audio.current.currentTime=0} style={{fontSize:"3em"}}/></IconButton>
+    <IconButton ><SkipNext onClick={()=>SkipSong()}  style={{fontSize:"3em"}}/></IconButton>
+    <IconButton onClick={()=>setIsPlaying(!isPlaying)}>{isPlaying?<Pause style={{fontSize:"3em"}}/>:<PlayArrow style={{fontSize:"3em"}}/>}</IconButton>
+    <IconButton ><SkipPrevious onClick={()=>SkipSong(false)} style={{fontSize:"3em"}}/></IconButton>
+    <IconButton ><FavoriteBorderOutlined style={{fontSize:"3em"}}/></IconButton>
     </div>
 
     </div>
