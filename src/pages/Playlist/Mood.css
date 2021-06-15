@@ -1,0 +1,43 @@
+.MoodBar {
+  width: 10em;
+  height: 20em;
+  background-color: #d5eaf5;
+  margin: auto;
+  border-radius: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  border: 3px solid #bfdeee;
+  box-shadow: -5px -5px 20px 2px white, 10px 5px 15px 5px #83b8d9;
+}
+
+.MoodImg {
+  width: 8em;
+  height: 12em;
+  background-color: rebeccapurple;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  margin-top: 1em;
+}
+
+.MoodImg img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 8em;
+  height: 12em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.Genre h2 {
+  color: #174080;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.NumberOfSongs h3 {
+  color: #70acd3;
+  font-size: 1em;
+  font-weight: 500;
+}

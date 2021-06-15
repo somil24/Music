@@ -6,9 +6,20 @@
 .heading {
   display: flex;
   justify-content: space-between;
+  margin: 3em 0 0 4em;
+  align-items: center;
+  color: #70acd3;
+}
+
+.heading > h2 {
+  font-size: 1.7em;
+  font-weight: 500;
 }
 
 .name {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
