@@ -6,11 +6,26 @@
 .Poadcast-Display {
   display: flex;
   flex-direction: row;
-  width: 27em;
-  height: 5em;
+  width: 30em;
+  height: 4.5em;
   border-radius: 4em;
   background-color: #c8e5f2;
-  margin-top: 3em;
+  margin-top: 3.4em;
   border: 3px solid #cadfea;
   box-shadow: 0px -5px 20px 2px white, 0px 5px 20px 13px #88bbda;
+  align-items: center;
+}
+
+.Poadcast-Display img {
+  background-color: aquamarine;
+  height: 4em;
+  width: 4em;
+  border-radius: 100%;
+  margin-left: 0.5em;
+  object-fit: cover;
+}
+.Poadcast-Display h2 {
+  font-size: 1.3em;
+  color: #70acd3;
+  margin-left: 1em;
 }

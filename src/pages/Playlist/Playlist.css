@@ -5,3 +5,7 @@
   flex-direction: column;
   align-items: center;
 }
+.Back {
+  display: flex;
+  justify-content: flex-start;
+}

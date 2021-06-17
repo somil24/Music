@@ -12,10 +12,13 @@ export default function Podcast(){
         <div className="Podcast-Name name">
 
         <div className="Poadcast-Display">
-            <img/>
+            <img src="https://stitcher-classic.imgix.net/feedimagesplain600/158319.jpg?w=600&h=600"/>
+            <h2>Why Won't You Date Me?</h2>
         </div>     
-        <div className="Poadcast-Display"></div>      
-        <img/>
+        <div className="Poadcast-Display">
+            <img src="https://m.media-amazon.com/images/I/41VRFa2mbAS._SL500_.jpg"/>
+            <h2>The Outsiders</h2>
+        </div>      
         </div>
         </div>
     )

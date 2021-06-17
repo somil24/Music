@@ -3,11 +3,11 @@ import {Replay,SkipNext,Pause,SkipPrevious,FavoriteBorderOutlined,PlayArrow} fro
 import { IconButton } from "@material-ui/core";
 import {useState,useRef,useEffect} from 'react';
 
-
+import{useSelector,useDispatch} from "react-redux";
+import {ToggleMusic} from "../../actions/index"
 export default function ControlPanel(props){
     
-        //const audio=new Audio("https://ia800504.us.archive.org/33/items/HotelCalifornia_140/Eagles-HellFreezesOver-HotelCalifornia0.mp3");
-        //const audioEl=new Audio("https://ia800504.us.archive.org/33/items/HotelCalifornia_140/Eagles-HellFreezesOver-HotelCalifornia0.mp3");
+    /*
         const audio=useRef();
         const [isPlaying,setIsPlaying]=useState(false);
         
@@ -30,16 +30,25 @@ export default function ControlPanel(props){
                 
             }         
         }  
-        
+        */
+       const myState=useSelector((state)=>state.toggleTheMusic)
+       const dispatch=useDispatch();
+       console.log(myState);
+       const audio=useRef();
+       
+       useEffect(()=>{
+        myState?audio.current.play() : audio.current.pause();
+        //console.log(audio.current.duration)
+    },[myState]);
     
 return(
     <div className="Control-Container">
     <audio ref={audio} src={props.src}/>
     <div className="icon">
-    <IconButton><Replay onClick={()=>audio.current.currentTime=0} style={{fontSize:"3em"}}/></IconButton>
-    <IconButton ><SkipNext onClick={()=>SkipSong()}  style={{fontSize:"3em"}}/></IconButton>
-    <IconButton onClick={()=>setIsPlaying(!isPlaying)}>{isPlaying?<Pause style={{fontSize:"3em"}}/>:<PlayArrow style={{fontSize:"3em"}}/>}</IconButton>
-    <IconButton ><SkipPrevious onClick={()=>SkipSong(false)} style={{fontSize:"3em"}}/></IconButton>
+    <IconButton><Replay  style={{fontSize:"3em"}}/>{/*()=>audio.current.currentTime=0*/}</IconButton>
+    <IconButton ><SkipNext   style={{fontSize:"3em"}}/>{/*()=>SkipSong()*/}</IconButton>
+    <IconButton onClick={()=>dispatch(ToggleMusic())}>{/*isPlaying?<Pause style={{fontSize:"3em"}}/>:<PlayArrow style={{fontSize:"3em"}}/>*/}{/*()=>setIsPlaying(!isPlaying)*/}<PlayArrow/></IconButton>
+    <IconButton ><SkipPrevious  style={{fontSize:"3em"}}/>{/*()=>SkipSong(false)*/}</IconButton>
     <IconButton ><FavoriteBorderOutlined style={{fontSize:"3em"}}/></IconButton>
     </div>
 
