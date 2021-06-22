@@ -1,4 +1,4 @@
-//import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./Common.css"
 import "./Artist.css"
 export default function Artist(){
@@ -12,10 +12,13 @@ export default function Artist(){
 
         </div>
         <div className="Artist-Name name">
+        <NavLink to="/vishal">
         <div className="ArtistAbout">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/VishalNH77.jpg"/>        
         </div>
 
+        </NavLink>
+       
         <div className="ArtistAbout">
              <img src="https://i.pinimg.com/originals/e4/aa/e6/e4aae66db3def99d228a5bc928a858f2.jpg"/>
         </div>

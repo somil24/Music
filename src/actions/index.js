@@ -3,3 +3,9 @@ export const ToggleMusic=()=>{
         type:"Toggle"
 }
 }
+
+export const MusicSRC=()=>{
+    return{
+        type:"SetMusic"
+}
+}
